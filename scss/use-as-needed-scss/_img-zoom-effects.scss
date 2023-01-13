@@ -1,0 +1,66 @@
+/*for hover zooms check out https://w3bits.com/css-image-hover-zoom/
+
+Quick zoom in
+/* Quick-zoom Container */
+.img-hover-zoom--quick-zoom img {
+    transform-origin: 0 0;
+    transition: transform .25s, visibility .25s ease-in;
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom--quick-zoom:hover img {
+    transform: scale(2);
+  }
+
+/* Point-zoom Container */
+.img-hover-zoom--point-zoom img {
+    transform-origin: 65% 75%;
+    transition: transform 1s, filter .5s ease-out;
+  }
+/* Point zoom Container */  
+
+  /* The Transformation */
+  .img-hover-zoom--point-zoom:hover img {
+    transform: scale(5);
+  }
+
+  /*Zoom and Rotate*/
+
+  /* Zoom-n-rotate Container */
+.img-hover-zoom--zoom-n-rotate img {
+    transition: transform .5s ease-in-out;
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom--zoom-n-rotate:hover img {
+    transform: scale(2) rotate(25deg);
+  }
+
+  /*Slow motion zoon container*/
+  /* Slow-motion Zoom Container */
+.img-hover-zoom--slowmo img {
+    transform-origin: 50% 65%;
+    transition: transform 5s, filter 3s ease-in-out;
+    filter: brightness(150%);
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom--slowmo:hover img {
+    filter: brightness(100%);
+    transform: scale(3);
+  }
+
+  /*Brighton and zoom in*/
+  /* Brightness-zoom Container */
+.img-hover-zoom--brightness img {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(50%);
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom--brightness:hover img {
+    filter: brightness(100%);
+    transform: scale(1.3);
+  }
+
