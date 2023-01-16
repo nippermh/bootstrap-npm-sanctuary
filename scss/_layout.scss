@@ -12,3 +12,264 @@ columns - 12 column grid with 6 grid tiers based on minimum width
 gutters
 
 */
+/*Masonary Grid*/
+
+ /* The container */
+ .img-hover-zoom {
+  /*  height: 250px;  Set it as per your need */
+    overflow: hidden; /* Hide the overflowing of child elements */
+  
+    @include media-breakpoint-down(md) { height: 200px; }
+  }
+  
+  /* Transition property for smooth transformation of images */
+  .img-hover-zoom img {
+    transition: transform .5s ease;
+  }
+  
+  /* Finally, transforming the image when container gets hovered */
+  .img-hover-zoom:hover img {
+    transform: scale(1.5);
+  }
+    
+/* Title Banner =============================================*/
+  
+.title-banner {
+    max-width:42em;
+    padding: 240px 0; 
+  /*  background: linear-gradient(100deg, #f50057 0%, #bb6bd9 100%); */
+  }
+  
+  .title-banner .sub-title {
+    color: var(--color-yellow);
+  }
+  
+  /* Subscribe Bar */
+  
+  .subscribe-bar {
+    background-color: #111;
+    padding: 30px 0 15px 0;
+  }
+  
+  .subscribe-bar p {
+    color: #fff;
+    margin-bottom: 0;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .subscribe-bar p {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .subscribe-bar input,
+  .subscribe-bar .btn {
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  /* .subscribe-bar .container .row {
+    display: flex;
+    align-items: center;
+  } */
+
+  /* Content Section */
+  
+  .content-area {
+    padding: 25px 0; /*was 100*/
+  }
+  
+  /* Post List */
+  
+  article.post {
+    margin: 50px 0;
+  }
+  
+  .post .meta, .card .meta {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-pink);
+    margin-bottom: 8px;
+  }
+  
+  .blog .post h2 a {
+    font-size: 3rem;
+    color: #111;
+  }
+  
+  .blog .post h2 a:hover {
+    color: var(--color-green);
+  }
+  
+  .blog .post p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #828282;
+    line-height: 1.5;
+  }
+  
+  .blog .post .read-more {
+    color: var(--color-pink);
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 12px;
+    transition: var(--transition-dur);
+  }
+  
+  .blog .post a.read-more:hover {
+    color: var(--color-dark);
+    
+  }
+
+  .arrow {
+    margin: 1em 0;
+
+    &::after {
+        display: inline-block;
+        padding-left: 8px;
+        content: "\0279E"; // arrow right unicode
+        -webkit-transition: transform 0.3s ease-out;
+        -moz-transition: transform 0.3s ease-out;
+        -ms-transition: transform 0.3s ease-out;
+        -o-transition: transform 0.3s ease-out;
+        transition: transform 0.3s ease-out;
+    }
+
+    &:hover {
+        color: var(--color-dark);
+        
+        &::after {
+            -webkit-transform: translateX(4px);
+            -moz-transform: translateX(4px);
+            -ms-transform: translateX(4px);
+            -o-transform: translateX(4px);
+            transform: translateX(4px);
+        }
+    }
+}
+
+  
+ 
+  
+.section-call-to-action {
+    position: relative;
+    text-align: center;
+    border-radius: 4px;
+    padding: 90px 100px;
+    margin: 20px 0;
+  }
+  
+  .section-call-to-action .underlay-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    border-radius: 40px;
+    background-color: #f2f2f2;
+  }
+  
+  .section-call-to-action .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 40px;
+    overflow: hidden;
+    background: linear-gradient(100deg, #f50057 0%, #bb6bd9 100%);
+    transform: rotate(358deg);
+  }
+  
+  .section-call-to-action .overlay-image img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+  }
+  
+  .section-call-to-action .overlay-image {
+    position: absolute;
+    transform: rotate(18deg);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 30%;
+    left: -4%;
+    bottom: -50%;
+    transition: var(--transition-dur);
+  }
+  
+  .section-call-to-action:hover .overlay-image {
+    transform: rotate(21deg);
+  }
+  
+  .section-call-to-action h2,
+  .section-call-to-action .sub-title,
+  .section-call-to-action p {
+    color: white;
+  }
+  
+  .section-call-to-action .sub-title {
+    color: var(--color-yellow);
+  }
+  
+  /* 
+  Footer Section 
+  */
+  
+  .footer-calltoaction {
+    padding: 100px 0;
+    background: linear-gradient(100deg, rgba(245, 0, 87, 0.6), rgba(187, 107, 217, 0.3)), 
+    url('../images/girl_portrait.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  
+  .footer-calltoaction .sub-title {
+    color: var(--color-yellow);
+  }
+  
+  .footer-calltoaction h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-calltoaction p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  
+  .footer-calltoaction .btn {
+    margin-top: 2rem;
+  }
+  
+  .copyright {
+    padding: 50px 0;
+  }
+  
+  .copyright p {
+    color: var(--white);
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+ .bottom-links {
+  background-color: #E05CA7;
+  color: #fff;
+  padding: 1rem;
+  min-height: 10vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 0;
+ }
+
+.bottom-links_small {
+  font-size: 12px;
+}
+a.bottom-links_link, a.bottom-links_link:visited, a.bottom-links_link:hover {
+  color: #fff;
+}

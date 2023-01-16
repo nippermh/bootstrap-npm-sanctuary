@@ -2,3 +2,8 @@
 that can be used to quickly add styles to 
 elements, such as text alignment, spacing, 
 and visibility classes. */
+
+.flex-vertical-center {
+    display: flex;
+    align-items: center;
+  }

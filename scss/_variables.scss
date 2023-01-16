@@ -4,8 +4,6 @@ fonts, and spacing. This file is typically imported first so that the
 variables can be used throughout the rest of the styles.
 */
 
-
-/* Variables */
 :root {
     --font-sans: "Inter", Helvetica, sans-serif;
     --font-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman,
@@ -23,10 +21,5 @@ variables can be used throughout the rest of the styles.
     --gradient-instagram: gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     --transition-dur: 0.3s;
   }
-
-  $enable-rounded: true;
-  $enable-shadows: true;
-  $enable-gradients: true;
-  $enable-transitions: true;
 
  
