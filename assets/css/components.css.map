@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "components.css",
+	"sources": [
+		"../../scss/components.scss"
+	],
+	"sourcesContent": [
+		"/*\r\nThis file should contain styles for \r\nspecific components, such as buttons, \r\nforms, and cards.\r\n*/"
+	],
+	"names": [],
+	"mappings": ""
+}
