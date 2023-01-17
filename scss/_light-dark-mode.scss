@@ -7,7 +7,36 @@
     background-color: #333333 !important;
     color: #ffffff !important;
 
-    h2 a {
+    .hero-bg {
+        background: transparent url(../images/3_girls_1200.jpg) no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        min-height: 70vh;
+        padding: 0;
+        margin: 0;
+    }
+
+    h2 > a {
         color: #ffffff !important;
+    }
+     .meta > span, .read-more, .arrow {
+        color: var(--color-yellow) !important;
+    } 
+    .footer-calltoaction {
+        padding: 100px 0;
+        background: transparent url(../images/girl_portrait.jpg) no-repeat center center;
+        background-size:cover;
+
+        .btn.btn-primary {
+            color: rgb(19, 19, 19) !important;
+        }
+    }
+    .bottom-links {
+        background-color: #333333 !important;
+
+        .bottom-links_link {
+            color: var(--color-yellow) !important;
+        }
+        
     }
 }
